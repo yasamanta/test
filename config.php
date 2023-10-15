@@ -28,7 +28,7 @@ try {
     $stmt->execute();
 
 
-    if ($i == 1) { // If the 'active' checkbox is checked
+    if ($i == 1) { 
         $activeUsersStmt = $pdo->prepare("INSERT INTO active_users (first_name, last_name) 
                                           VALUES (:first_name, :last_name)");
 
